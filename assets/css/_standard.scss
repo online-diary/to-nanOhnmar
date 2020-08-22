@@ -1,0 +1,43 @@
+$main_color : #00fcff;
+
+body {
+     padding: 0;
+     margin: 0;
+     position: relative;
+}
+
+p {
+     margin: 0;
+}
+
+
+.container-fluid {
+     padding: 0;
+}
+
+.section_title {
+     font-size: 18px;
+     display: inline-block;
+     position: relative;
+     margin-bottom: 30px;
+}
+
+.section_title::before {
+     position: absolute;
+     content: '';
+     width: 100%;
+     height: 39%;
+     background: $main_color;
+     bottom: 0;
+     z-index: -1;
+}
+
+.section_divider {
+     margin: 50px auto;
+}
+
+.section_svg {
+     width: 100px;
+     margin: 0 auto;
+     margin-bottom: 15px;
+}
