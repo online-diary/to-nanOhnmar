@@ -2,7 +2,6 @@ $(document).ready(function () {
      $('body').css({
           'overflow': 'hidden'
      })
-
      $('.owl-carousel').owlCarousel({
           loop: false,
           items: 2,
