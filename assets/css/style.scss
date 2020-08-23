@@ -25,6 +25,39 @@
      }
 }
 
+.cake {
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     background: white;
+     z-index: 10;
+     overflow: hidden;
+
+     .up {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          left: 50%;
+          top: 130%;
+          animation: upper_1 3s 10s forwards;
+          z-index: 11;
+     }
+
+     @keyframes upper_1 {
+          from {
+               top: 130%
+          }
+
+          to {
+               top: 50%
+          }
+
+     }
+
+     marquee {
+          display: inline;
+     }
+}
+
 .hero-wrapper {
      background-image: url('../images/hero.png');
      height: 300px;
