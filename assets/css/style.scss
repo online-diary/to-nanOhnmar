@@ -17,7 +17,9 @@
           border: 0px;
           font-size: 30px;
           color: white;
-          background: #FFC107;
+          background: black;
+          box-shadow: 1px 1px 4px 2px #ffffff,
+               -1px -1px 5px 1px #ffffff;
      }
 
      button:active {
@@ -38,19 +40,12 @@
           transform: translate(-50%, -50%);
           left: 50%;
           top: 130%;
-          animation: upper_1 3s 10s forwards;
           z-index: 11;
      }
 
-     @keyframes upper_1 {
-          from {
-               top: 130%
-          }
-
-          to {
-               top: 50%
-          }
-
+     .up::after {
+          position: absolute;
+          content: 'touch me!'
      }
 
      marquee {

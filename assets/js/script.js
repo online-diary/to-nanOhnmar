@@ -32,7 +32,9 @@ $(document).ready(function () {
                $(this).animate({
                     'top': `+=${topRand(0, 700)}px`,
                }, 10000, () => {
-                    // alert('animation is finished')
+                    $('.up').animate({
+                         top: '50%'
+                    }, 2000)
                })
           })
      });
