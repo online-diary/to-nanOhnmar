@@ -31,7 +31,7 @@ $(document).ready(function () {
                });
                $(this).animate({
                     'top': `+=${topRand(0, 700)}px`,
-               }, 10000, () => {
+               }, 5000, () => {
                     $('.up').animate({
                          top: '50%'
                     }, 2000)
