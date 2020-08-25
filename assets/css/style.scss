@@ -4,22 +4,38 @@
      position: fixed;
      width: 100%;
      height: 100vh;
-     background: black;
      z-index: 99999999999;
      display: flex;
      align-items: center;
      justify-content: center;
+     background-image: url('../images/inspire.png');
+     background-size: cover;
 
      button {
-          width: 100px;
-          height: 100px;
-          border-radius: 50%;
+          width: 58px;
+          height: 72px;
+          border-radius: 37px;
           border: 0px;
-          font-size: 30px;
+          font-size: 25px;
           color: white;
-          background: black;
-          box-shadow: 1px 1px 4px 2px #ffffff,
-               -1px -1px 5px 1px #ffffff;
+          line-height: 72px;
+          background: linear-gradient(145deg, #53ffff, #46e6e4);
+          box-shadow: 10px 10px 11px #45e3e1,
+               -10px -10px 11px #57ffff;
+
+          i {
+               position: relative;
+          }
+
+          i:after {
+               position: absolute;
+               content: 'TOUCH';
+               transform: translate(-50%, -50%);
+               left: 50%;
+               top: 126%;
+               font-size: 12px;
+               color: white;
+          }
      }
 
      button:active {
